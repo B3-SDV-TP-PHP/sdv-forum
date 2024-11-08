@@ -1,0 +1,120 @@
+// styles.scss
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --ck-color-base-background: #141414 !important;
+    --ck-color-toolbar-background: var(--ck-color-base-background) !important;
+    --ck-color-button-default-background: #fff !important;
+    --ck-color-button-default-disabled-background: var(--ck-color-button-default-background) !important;
+    --ck-color-split-button-hover-background: var(--ck-color-button-default-background) !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle, rgb(20, 20, 20) 0%, rgb(0, 0, 0) 100%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.default-position {
+    min-height: 100vh;
+    margin-top: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    &::first-letter {
+        color: #721f1f;
+    }
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    th, td {
+        border: 0;
+    }
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    background-color: rgb(0, 0, 0);
+}
+
+textarea {
+    width: 100%;
+    font-family: 'Montserrat', 'sans-serif';
+    resize: vertical;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+
+th {
+    background-color: rgb(18, 18, 18);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    &::before {
+        content: "📑 ";
+    }
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(18, 18, 18);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+a {
+    color: rgb(167, 40, 40);
+    transition: 0.2s;
+    &:hover {
+        color: #721f1f;
+    }
+}
